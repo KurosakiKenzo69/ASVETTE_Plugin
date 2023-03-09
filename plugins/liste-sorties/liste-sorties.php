@@ -70,14 +70,15 @@
     function retrieve_site_content($atts) {
         // Récupération du lien
         $id_activite = isset($atts['id_activite']) ? (int) $atts['id_activite'] : 0;
+        $status = isset($atts['status']) ? $atts['status'] : "";
 
-        if ($id_activite === 0 || "") {
+        if ($id_activite === 0) {
             $url = get_option('retrieve_site_content_url');
-        }
-
-        else {
-            $id_activite = max(min($id_activite, 9), 1);
+        } elseif ($status === "passe") {
             $url = get_option('retrieve_site_content_url') . "?Passées=T&Activite=" . $id_activite;
+        } else {
+            $status === "a venir";
+            $url = get_option('retrieve_site_content_url') . "?Passées=F&Activite=" . $id_activite;
         }
 
 
