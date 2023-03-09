@@ -1,0 +1,198 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+#table_adherent tbody {
+    cursor: pointer;
+}
+
+/* footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    color: #FFFFFF;
+    border-bottom: 4px solid #933300;
+    border-top: 1px solid #933300;
+    background-color: #cc6633;
+} */
+
+/*=-footer-=*/
+
+footer {
+
+    color: #fff;
+    background-attachment: fixed;
+    background-color: #222;
+    /*    background-image: url(https://s7.postimg.org/uyf0oioaz/footer-bg.png);*/
+    background-size: cover;
+    background-position: bottom;
+    background-color: #CC6633;
+    border-top: solid 4px #933300;
+}
+
+
+#footer_info {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #222;
+    text-align: center;
+}
+
+footer p {
+    color: #ccc;
+}
+
+footer a {
+    color: #ccc;
+}
+
+.social-pet li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-pet li a {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    text-align: center;
+    /*display: block;*/
+    line-height: 35px;
+    background-color: #3a5a95;
+    color: #fff;
+}
+
+.social-pet li:nth-child(2) a {
+    background-color: #57aced;
+}
+
+.social-pet li:nth-child(3) a {
+    background-color: #dd4f43;
+}
+
+.social-pet li:nth-child(4) a {
+    background-color: #6b27b2;
+}
+
+.social-pet li a:hover {
+    background-color: #0141a2;
+}
+
+.social-pet li a:hover i {
+    transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+}
+
+.recent-post li {
+    display: block;
+    color: #ccc;
+    margin-bottom: 25px;
+}
+
+.recent-post li label {
+    float: left;
+    border: 2px solid #ccc;
+    padding: 1px 7px;
+    text-align: center;
+    width: 250px;
+}
+
+.recent-post li label span {
+    color: #fff;
+}
+
+footer .input-group-addon {
+    background-color: #0141a2;
+    padding: 10px;
+}
+
+.f-address li {
+    display: block;
+}
+
+.f-address li i {
+    color: #2995de;
+    font-size: 18px;
+}
+
+.f-address li a {
+    color: #ccc;
+}
+
+/*=-Copyright-=*/
+
+.copyright {
+    background-color: #111;
+    padding: 12px 0;
+    font-size: 14px;
+}
+
+table {
+    border-radius: 15px;
+}
+
+#carousel_index {
+    margin-top: 1%;
+    -moz-box-shadow: 5px 5px 5px 0px #656565;
+    -webkit-box-shadow: 5px 5px 5px 0px #656565;
+    -o-box-shadow: 5px 5px 5px 0px #656565;
+    box-shadow: 5px 5px 5px 0px #656565;
+    filter: progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=134, Strength=5);
+}
+
+/*LG 20200207 repris de CodeGears début */
+.login-error {
+    color: red;
+    font-size: 1vw;
+    justify-content: center;
+    padding-bottom: 4%;
+    display: none;
+}
+/*LG 20200207 repris de CodeGears fin */
+
+/* LG 20200417 début */
+.ImportésKO {
+    font-weight: bold;
+    color: red;
+}
+.ImportésDouteux {
+    font-weight: bold;
+    color: coral;
+}
+.ImportésOK {
+    font-weight: bold;
+    color: green;
+}
+/* LG 20200417 fin */
+.btn-secondary {
+    color: #fff;
+    background-color: dimgrey;
+    border-color: #AEA79F;
+}
+
+/* LG 20211128 : pour barrer une participation*/
+.participation-annulee{
+    background: repeating-linear-gradient( 135deg, rgba(0, 0, 0, 0.03), rgba(0, 0, 0, 0.03) 50px, gray 50px, gray 51px );
+}
+.participation-annulee .raison-annulation{
+    background-color: #E95420;
+    border-radius: 0.25rem;
+}
+
+/* LG 20220910 début, pour avoir le même style qu'un hyperlien (copie de bottstrap.css) */
+.pseudo_A {
+    color: #E95420;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.pseudo_A:hover {
+    color: #ac3911;
+    text-decoration: underline;
+}
+/* LG 20220910 fin */
